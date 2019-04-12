@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Monthly Salary"
+        android:textSize="24sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/EtSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Monthly Salary"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/BtnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="Calculate Tax" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yearly Tax Amount "
+        android:textSize="24sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/TvTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:text="0" />
+</LinearLayout>
