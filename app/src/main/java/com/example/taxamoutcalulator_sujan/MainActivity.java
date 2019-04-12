@@ -31,13 +31,17 @@ public class MainActivity extends AppCompatActivity {
                 if(TextUtils.isEmpty(EtSalary.getText().toString()))
                 {
                     EtSalary.setError("Enter your Monthly Salary");
+                    EtSalary.requestFocus();
+                    return;
                 }
-                else if ((EtSalary.getText().toString()).length()>=9){
+                else if((EtSalary.getText().toString()).length()>=9)
+                {
                     EtSalary.setError("Enter valid digit Monthly Salary");
+                    EtSalary.setText("");
+                    EtSalary.requestFocus();
+                    return;
                 }
                 float salary;
-
-
 
                 salary = Integer.parseInt(EtSalary.getText().toString());
                 salary=salary*12;
